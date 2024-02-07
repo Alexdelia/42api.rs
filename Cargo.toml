@@ -1,0 +1,16 @@
+[package]
+name = "api42"
+version = "0.1.0"
+edition = "2021"
+authors = ["Alexdelia"]
+description = "42 (https://42.fr) api (https://api.intra.42.fr) wrapper"
+
+[dependencies]
+reqwest = { version = "0.11", features = ["blocking", "json"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+chrono = { version = "0.4", features = ["serde"] }
+dotenv = "0.15"
+envy = "0.4"
+const_format = "0.2"
+tracing = "0.1"
