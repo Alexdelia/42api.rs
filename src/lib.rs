@@ -1,6 +1,6 @@
 mod access_token;
+mod endpoint;
 mod req;
-mod user;
 
 #[cfg(test)]
 mod test;
@@ -16,5 +16,5 @@ pub const API_URL_AUTH: &str = concatcp!(API_URL, "oauth/token");
 pub const EXPIRATION: u64 = 7200;
 
 pub use access_token::{Token, TokenError, TokenInitFatalError};
+pub use endpoint::user::User;
 pub use req::ReqResultError;
-pub use user::User;

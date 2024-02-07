@@ -18,7 +18,7 @@ mod tests {
     use crate::Token;
 
     const LOGIN: &str = "adelille";
-    const LOG_FILE: &str = "test_req_user.log";
+    const LOG_FILE: &str = "req_user";
 
     #[test]
     fn test_req_user() {
