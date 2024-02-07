@@ -88,7 +88,7 @@ impl Token {
         }
     }
 
-    pub fn simple_req(
+    fn simple_req(
         &self,
         client: &Client,
         endpoint: &str,
